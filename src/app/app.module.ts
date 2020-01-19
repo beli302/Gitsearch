@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchUserComponent } from './search-user/search-user.component';
+import { DataPipePipe } from './data-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchUserComponent
+    SearchUserComponent,
+    DataPipePipe
   ],
   imports: [
     BrowserModule,
