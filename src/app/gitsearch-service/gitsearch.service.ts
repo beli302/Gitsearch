@@ -16,10 +16,10 @@ export class GitsearchService {
     this.username = 'beli302';
   }
   getProfileInfo() {
-    return this.http.get("https://api.github.com/users/" + this.username + "?access_token" + this.auth_token).map(result=>result);
+    return this.http.get("https://api.github.com/users/" + this.username + "?access_token=" + this.auth_token).map(result=>result);
   }
   getProfileRepos() {
-    return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token" + this.auth_token).map(result=>result);
+    return this.http.get("https://api.github.com/users/" + this.username+'/repos?access_token' + this.auth_token).map(result=>result);
   }
   updateProfile(username: string) {
     this.username = username;

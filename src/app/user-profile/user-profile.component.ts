@@ -28,6 +28,16 @@ export class UserProfileComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.username = 'beli302';
+    this.gitsearchService.getProfileInfo().subscribe(profile =>{
+      console.log(profile);
+      this.profile = profile;
+    });
+
+    this.gitsearchService.getProfileRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    })
   }
 
 }
