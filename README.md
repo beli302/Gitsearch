@@ -1,6 +1,5 @@
 # Gitsearch
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This is a website where users can enter their GitHub names, submit and access there profile together with there repositories
 
 ## Development server
 

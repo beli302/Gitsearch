@@ -7,7 +7,7 @@
 </form>
 <div *ngIf="profile">
     <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="heading">
             {{profile.name}}<div>{{profile.login}}</div>
             <span *ngIf="profile.company">,works at {{profile.company}}</span>
             {{profile.location}}
@@ -43,7 +43,7 @@
                     <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on
                             github</a></p>
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="heading">
                             <h3 class="panel-tittle">Repos</h3>
 
                         </div>
