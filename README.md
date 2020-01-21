@@ -10,3 +10,7 @@ By Belinda Okumu
 * Open my Github account.
 * Git clone my repository.
 * Send a pull request.
+
+## Technology used
+*Angular
+*Css
