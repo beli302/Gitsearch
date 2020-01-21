@@ -1,7 +1,8 @@
 # Gitsearch
-This is a website where users can enter their GitHub names, submit and access there profile together with there repositories
 
-## Development server
+
+## Description
+This is a website where users can enter their GitHub names, submit and access there profile together with there repositories
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
