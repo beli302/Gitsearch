@@ -3,6 +3,9 @@
 ## Description
 This is a website where users can enter their GitHub names, submit and access there profile together with there repositories
 
+## CodeBeat
+[![codebeat badge](https://codebeat.co/badges/b298fe5c-47b3-4cb3-830b-c4aa60296d06)](https://codebeat.co/projects/github-com-beli302-gitsearch-master
+
 ## Authors information
 By Belinda Okumu
 
