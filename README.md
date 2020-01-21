@@ -5,3 +5,8 @@ This is a website where users can enter their GitHub names, submit and access th
 
 ## Authors information
 By Belinda Okumu
+
+## Set up instractions
+* Open my Github account.
+* Git clone my repository.
+* Send a pull request.
