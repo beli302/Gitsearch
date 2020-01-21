@@ -14,3 +14,6 @@ By Belinda Okumu
 ## Technology used
 *Angular
 *Css
+
+## Contributing
+Pull requests are welcome.
