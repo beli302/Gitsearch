@@ -18,6 +18,9 @@ By Belinda Okumu
 *Angular
 *Css
 
+## Licence
+url('https://beli302.github.io/Gitsearch/')
+
 ## Contributing
 Pull requests are welcome.
 
