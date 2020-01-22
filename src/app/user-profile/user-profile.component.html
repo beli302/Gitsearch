@@ -1,31 +1,29 @@
-<form action="" class="search-form">
+<form class="search-form">
     <div class="form-group">
         <input type="text" class="form-control" placeholder="search git users with their username"
-            [(ngModel)]="username" name="username" (keyup)="findProfile()">
+            [(ngModel)]="username" name="username" (keyup)="findPicture()">
 
     </div>
 </form>
-<div *ngIf="profile">
-    <div class="panel panel-default">
+<div *ngIf="picture">
         <div class="heading">
-            {{profile.name}}<div>{{profile.login}}</div>
-            <span *ngIf="profile.company">,works at {{profile.company}}</span>
-            {{profile.location}}
+            {{picture.name}}<div>{{picture.login}}</div>
+            <span *ngIf="picture.company">,works at {{picture.company}}</span>
+            {{picture.location}}
         </div>
-    </div>
-    <div class="panel-body">
+    <div class="body">
         <div class="row">
-            <div class="col-sm-3">
-                <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
+            <div class="col-sm-3" id="pic">
+                <img src="{{picture.avatar_url}}" class="img-circle img-responsive" alt="Picture Image">
             </div>
             <br>
             <br>
             <div class="col-md-6">
                 <ul>
-                    <li class="list-group-item" *ngIf="profile.login">{{profile.login}}</li>
-                    <li class="list-group-item" *ngIf="profile.bio">{{profile.name}}</li>
-                    <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
-                    <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+                    <li class="list-group-item" *ngIf="picture.login">{{picture.login}}</li>
+                    <li class="list-group-item" *ngIf="picture.bio">{{picture.name}}</li>
+                    <li class="list-group-item" *ngIf="picture.blog">{{picture.blog}}</li>
+                    <li class="list-group-item" *ngIf="picture.email">{{picture.email}}</li>
                 </ul>
 
             </div>
@@ -34,20 +32,20 @@
                 <div>
                     <p>
                        
-                        <button class="box"><span class="label label-default">{{profile.followers}}Followers</span></button>
-                        <button class="box"><span class="label label-default">{{profile.following}}Following</span></button>
-                        <button class="box"><span class="label label-default">{{profile.public_gists}}Public gists</span></button>
-                        <button class="box"><span class="label label-default">{{profile.public_repos}}Public Repos</span></button>
+                        <button class="box"><span class="label label-default">{{picture.followers}}Followers</span></button>
+                        <button class="box"><span class="label label-default">{{picture.following}}Following</span></button>
+                        <button class="box"><span class="label label-default">{{picture.public_gists}}Public gists</span></button>
+                        <button class="box"><span class="label label-default">{{picture.public_repos}}Public Repos</span></button>
                     </p>
                 
                     <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on
                             github</a></p>
-                    <div class="panel panel-default">
+                    <div class="repo">
                         <div class="heading">
-                            <h3 class="panel-tittle">Repos</h3>
+                            <h3 class="tittle">Repos</h3>
 
                         </div>
-                        <div class="panel-body" *ngFor="let repo of repos">
+                        <div class="body" *ngFor="let repo of repos">
 
                             <p class="clearfix">
                                 <a href="{{repo.html_url}}" target="_blank" ><strong>{{repo.name}}</strong></a>

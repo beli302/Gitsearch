@@ -8,20 +8,20 @@ import {GitsearchService} from '../gitsearch-service/gitsearch.service';
 })
 export class UserProfileComponent implements OnInit {
 
-  profile: any;
+  picture: any;
   repos:any;
   username:string;
 
   constructor(private gitsearchService: GitsearchService) {
 
    }
-   findProfile(){
-    this.gitsearchService.updateProfile(this.username);
-    this.gitsearchService.getProfileInfo().subscribe(profile =>{
-      console.log(profile);
-      this.profile = profile;
+   findPicture(){
+    this.gitsearchService.updatePicture(this.username);
+    this.gitsearchService.getPictureInfo().subscribe(picture =>{
+      console.log(picture);
+      this.picture = picture;
     });
-    this.gitsearchService.getProfileRepos().subscribe(repos => {
+    this.gitsearchService.getPictureRepos().subscribe(repos => {
       console.log(repos);
       this.repos = repos;
     })
@@ -29,12 +29,12 @@ export class UserProfileComponent implements OnInit {
 
   ngOnInit() {
     this.username = 'beli302';
-    this.gitsearchService.getProfileInfo().subscribe(profile =>{
-      console.log(profile);
-      this.profile = profile;
+    this.gitsearchService.getPictureInfo().subscribe(picture =>{
+      console.log(picture);
+      this.picture = picture;
     });
 
-    this.gitsearchService.getProfileRepos().subscribe(repos => {
+    this.gitsearchService.getPictureRepos().subscribe(repos => {
       console.log(repos);
       this.repos = repos;
     })

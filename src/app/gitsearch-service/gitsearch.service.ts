@@ -12,16 +12,16 @@ export class GitsearchService {
   auth_token = "0975f9b71c7c550230b0fc01dac8f1742b8decb8";
 
   constructor(private http: HttpClient) {
-    console.log("Service is now ready!");
+  
     this.username = 'beli302';
   }
-  getProfileInfo() {
+  getPictureInfo() {
     return this.http.get("https://api.github.com/users/" + this.username + "?access_token=" + this.auth_token).map(result=>result);
   }
-  getProfileRepos() {
+  getPictureRepos() {
     return this.http.get("https://api.github.com/users/" + this.username+'/repos?access_token' + this.auth_token).map(result=>result);
   }
-  updateProfile(username: string) {
+  updatePicture(username: string) {
     this.username = username;
   }
 }
