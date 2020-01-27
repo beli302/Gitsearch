@@ -18,7 +18,7 @@ By Belinda Okumu
 *Angular
 *Css
 
-## Licence
+## Link
 url('https://beli302.github.io/Gitsearch/')
 
 ## Contributing
@@ -30,4 +30,4 @@ Pull requests are welcome.
 
 ## Licence
 Licensed under the  [MIT license](LICENSE).
-Copyright (c) 2020 Quotes
+Copyright (c) 2020 Gitsearch
